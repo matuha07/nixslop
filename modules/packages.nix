@@ -22,6 +22,5 @@
     gsettings-desktop-schemas
     nixfmt-rfc-style
   ];
-  programs.thunar.enable = true;
   programs.fish.enable = true;
 }

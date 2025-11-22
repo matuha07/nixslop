@@ -13,6 +13,17 @@
       exec-once = [
         "waybar"
       ];
+
+
+      input = {
+        kb_layout = "us,ru";
+	kb_options = "grp:win_space_toggle";
+      };
+
+      misc = {
+        force_default_wallpaper = 0;
+	disable_hyprland_logo = true;
+      };
     };
   };
 }
