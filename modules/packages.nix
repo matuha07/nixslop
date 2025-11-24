@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 {
+  services.flatpak.enable = true;
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     vim
@@ -11,6 +12,7 @@
     openssl
     prisma-engines
     brightnessctl
+    bluetui
 
     #hyprslop
     hyprpolkitagent
@@ -20,7 +22,8 @@
     gnome-themes-extra
     glib
     gsettings-desktop-schemas
+
     nixfmt-rfc-style
   ];
-  programs.fish.enable = true;
+  programs.zsh.enable = true;
 }

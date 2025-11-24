@@ -2,6 +2,8 @@
 {
   fonts.enableDefaultPackages = true;
   fonts.packages = with pkgs; [
+  fira-code-symbols
+  fira-code
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-emoji

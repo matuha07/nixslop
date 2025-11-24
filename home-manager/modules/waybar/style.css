@@ -1,0 +1,145 @@
+* {
+    font-family: "JetBrainsMono Nerd Font Mono", "JetBrains Mono", monospace;
+    border: none;
+    border-radius: 0px;
+    min-height: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+window#waybar {
+    background: transparent;
+    color: #ffffff;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    transition-property: none;
+}
+
+button:hover {
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    -gtk-icon-effect: none;
+    -gtk-icon-shadow: none;
+}
+
+
+
+#mode {
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+    padding: 0 10px;
+    color: #f0f0ff;
+}
+
+#custom-logout {
+    padding-left: 2.5px;
+    padding-right: 5px;
+    color: #f0f0ff;
+    border-radius: 99px;
+    margin-left: 4px;
+    margin-right: 4px;  
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    font-weight: bold;
+}
+
+#battery {
+    /* color: #000000; */
+    margin-left: 4px;
+    padding-right: 13px; 
+}
+
+#memory {
+    /* background-color: #fab387; */
+    /* color: #000000; */
+    /* padding: 0 10px 0 0; */
+}
+
+
+
+#network {
+    /* background-color: #a6e3a1; */
+    /* color: #000000; */
+}
+#taskbar {
+    margin-left: 4px;
+}
+
+#taskbar button {
+    color: #f0f0ff;
+}
+
+#taskbar button:first-child {
+    border-radius: 99px 0 0 99px;
+}
+
+#taskbar button:last-child {
+    border-radius: 0 99px 99px 0;
+}
+
+#language {
+    background: #00b093;
+    color: #740864;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    color: #000000;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+

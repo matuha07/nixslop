@@ -1,14 +1,16 @@
 {
   wayland.windowManager.hyprland.settings = {
     bind = [
-    # apps
+      # apps
       "$mainMod, Q, exec, kitty"
       "$mainMod, B, exec, zen"
       "$mainMod, R, exec, $menu --show drun"
       "$mainMod, C, killactive,"
+      ", Print, exec, grimblast --notify --freeze copysave area"
+      "$mainMod, V, exec, cliphist list | $menu --dmenu | cliphist decode | wl-copy"
+      "$mainMod, L, exec, loginctl lock-session"
 
-
-    # switch workspaces
+      # switch workspaces
       "$mainMod, 1, workspace, 1"
       "$mainMod, 2, workspace, 2"
       "$mainMod, 3, workspace, 3"
@@ -16,7 +18,7 @@
       "$mainMod, 5, workspace, 5"
       "$mainMod, 6, workspace, 6"
 
-    # move window to a workspace
+      # move window to a workspace
       "$mainMod SHIFT, 1, movetoworkspace, 1"
       "$mainMod SHIFT, 2, movetoworkspace, 2"
       "$mainMod SHIFT, 3, movetoworkspace, 3"
@@ -24,7 +26,7 @@
       "$mainMod SHIFT, 5, movetoworkspace, 5"
       "$mainMod SHIFT, 6, movetoworkspace, 6"
 
-    # move focus
+      # move focus
       "$mainMod, left, movefocus, l"
       "$mainMod, right, movefocus, r"
       "$mainMod, up, movefocus, u"
@@ -45,4 +47,4 @@
       ",XF86MonBrightnessDown, exec, brightnessctl -e4 -n2 set 5%-"
     ];
   };
-}	
+}

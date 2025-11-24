@@ -6,13 +6,8 @@
 
 {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    ./modules/boot.nix
-    ./modules/packages.nix
-    ./modules/virtualisation.nix
-    ./modules/fonts.nix
-    ./modules/video.nix
+    ./modules
   ];
 
   # Use latest kernel.
@@ -36,6 +31,9 @@
     variant = "";
   };
 
+
+  services.udisks2.enable = true;
+
   users.users.motya = {
     isNormalUser = true;
     description = "motya";
@@ -43,10 +41,13 @@
       "networkmanager"
       "wheel"
       "docker"
+      "libvirtd"
     ];
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
     packages = with pkgs; [ ];
   };
+
+  services.getty.autologinUser = "motya";
 
   nix.settings.experimental-features = [
     "nix-command"
