@@ -1,4 +1,7 @@
 { config, pkgs, ... }:
+let
+  helium-browser = pkgs.callPackage ./helium.nix { };
+in
 {
   home.packages = with pkgs; [
     kdePackages.dolphin
@@ -6,29 +9,35 @@
     kdePackages.qt6ct
 
     qbittorrent
+    localsend
     fastfetch
     btop
     unzip
     zip
-    localsend
     ripgrep
     pciutils
     usbutils
     wl-clipboard
     grim
     slurp
-    feh
     dconf
     cliphist
     grimblast
+    telegram-desktop
+    lm_sensors
+    bat
+    helium-browser
 
     #media
     ffmpeg
     mpv
     feh
+    krita
+    obs-studio
 
     #hyprass
     xdg-desktop-portal-hyprland
+    hyprpolkitagent
 
     #dev
     tree

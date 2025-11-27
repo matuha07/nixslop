@@ -19,6 +19,10 @@
     };
 };
 
+  home.file.".config/kwalletrc".text = "
+  [Wallet]
+  Enabled=false";
+
   home.username = "motya";
   home.homeDirectory = "/home/motya";
   home.stateVersion = "25.05";

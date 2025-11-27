@@ -5,6 +5,7 @@
       "$mainMod, Q, exec, kitty"
       "$mainMod, B, exec, zen"
       "$mainMod, R, exec, $menu --show drun"
+      "$mainMod, E, exec, $explorer"
       "$mainMod, C, killactive,"
       ", Print, exec, grimblast --notify --freeze copysave area"
       "$mainMod, V, exec, cliphist list | $menu --dmenu | cliphist decode | wl-copy"

@@ -11,10 +11,13 @@
       "$mainMod" = "SUPER";
       "$terminal" = "kitty";
       "$menu" = "wofi";
+      "$explorer" = "dolphin";
       exec-once = [
         "waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
+	"systemctl --user start hyprpolkitagent"
+	"hyprpaper"
       ];
 
       input = {
@@ -26,12 +29,6 @@
         force_default_wallpaper = 0;
         disable_hyprland_logo = true;
       };
-
-
-      animations = {
-        enabled = false;
-      };
-
     };
   };
 }
