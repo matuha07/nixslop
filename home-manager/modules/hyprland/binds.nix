@@ -3,7 +3,7 @@
     bind = [
       # apps
       "$mainMod, Q, exec, kitty"
-      "$mainMod, B, exec, zen"
+      "$mainMod, B, exec, helium-browser"
       "$mainMod, R, exec, $menu --show drun"
       "$mainMod, E, exec, $explorer"
       "$mainMod, C, killactive,"
@@ -18,6 +18,10 @@
       "$mainMod, 4, workspace, 4"
       "$mainMod, 5, workspace, 5"
       "$mainMod, 6, workspace, 6"
+      "$mainMod, 7, workspace, 7"
+      "$mainMod, 8, workspace, 8"
+      "$mainMod, 9, workspace, 9"
+
 
       # move window to a workspace
       "$mainMod SHIFT, 1, movetoworkspace, 1"
@@ -26,6 +30,10 @@
       "$mainMod SHIFT, 4, movetoworkspace, 4"
       "$mainMod SHIFT, 5, movetoworkspace, 5"
       "$mainMod SHIFT, 6, movetoworkspace, 6"
+      "$mainMod SHIFT, 7, movetoworkspace, 7"
+      "$mainMod SHIFT, 8, movetoworkspace, 8"
+      "$mainMod SHIFT, 9, movetoworkspace, 9"
+
 
       # move focus
       "$mainMod, left, movefocus, l"

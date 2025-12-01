@@ -6,6 +6,5 @@
     ./fonts.nix
     ./video.nix
     ./bluetooth.nix
-    ./mysql.nix
   ];
 }

@@ -27,6 +27,7 @@ in
     lm_sensors
     bat
     helium-browser
+    postman
 
     #media
     ffmpeg
@@ -46,12 +47,7 @@ in
     gh
     gcc
     go
-
-    #php-ass
-    jetbrains.phpstorm
-    php
-    php.packages.composer
-    laravel
+    bruno
 
   ];
 
