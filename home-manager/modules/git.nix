@@ -1,7 +1,9 @@
 {
   programs.git = {
     enable = true;
-    userName = "motya";
-    userEmail = "mmotyaa@proton.me";
+    settings = {
+      user.name = "motya";
+      user.email = "mmotyaa@proton.me";
+    };
   };
 }
