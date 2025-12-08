@@ -39,6 +39,7 @@ in
     #hyprass
     xdg-desktop-portal-hyprland
     hyprpolkitagent
+    quickshell
 
     #dev
     tree

@@ -43,7 +43,7 @@
       "docker"
       "libvirtd"
     ];
-    shell = pkgs.zsh;
+    shell = pkgs.nushell;
     packages = with pkgs; [ ];
   };
 

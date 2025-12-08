@@ -6,5 +6,6 @@
     ./fonts.nix
     ./video.nix
     ./bluetooth.nix
+    ./steam.nix
   ];
 }

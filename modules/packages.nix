@@ -13,6 +13,7 @@
     prisma-engines
     brightnessctl
     bluetui
+    nushell
 
     #hyprslop
     hyprpolkitagent
