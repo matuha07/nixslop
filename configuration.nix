@@ -31,7 +31,6 @@
     variant = "";
   };
 
-
   services.udisks2.enable = true;
 
   users.users.motya = {
@@ -42,6 +41,7 @@
       "wheel"
       "docker"
       "libvirtd"
+      "kvm"
     ];
     shell = pkgs.nushell;
     packages = with pkgs; [ ];
@@ -55,14 +55,6 @@
   ];
 
   services.cloudflare-warp.enable = true;
-
-  environment.variables = {
-    PRISMA_QUERY_ENGINE_LIBRARY = "${pkgs.prisma-engines}/lib/libquery_engine.node";
-    PRISMA_SCHEMA_ENGINE_BINARY = "${pkgs.prisma-engines}/bin/schema-engine";
-    PRISMA_QUERY_ENGINE_BINARY = "${pkgs.prisma-engines}/bin/query-engine";
-    PRISMA_MIGRATION_ENGINE_BINARY = "${pkgs.prisma-engines}/bin/migration-engine";
-    PRISMA_FMT_BINARY = "${pkgs.prisma-engines}/bin/prisma-fmt";
-  };
 
   system.stateVersion = "25.11";
 

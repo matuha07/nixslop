@@ -27,7 +27,7 @@ in
     lm_sensors
     bat
     helium-browser
-    postman
+    carapace
 
     #media
     ffmpeg
@@ -35,6 +35,7 @@ in
     feh
     krita
     obs-studio
+    prismlauncher
 
     #hyprass
     xdg-desktop-portal-hyprland
@@ -48,15 +49,7 @@ in
     gh
     gcc
     go
-    bruno
 
   ];
-
-  xdg.configFile."php/php.ini".text = ''
-    zend_extension = xdebug.so
-    xdebug.mode = debug
-    xdebug.start_with_request = yes
-    xdebug.client_port = 9003
-  '';
 
 }

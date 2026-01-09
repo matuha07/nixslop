@@ -1,22 +1,31 @@
 { lib, pkgs, ... }:
 {
-  programs = {
-    nushell = {
-      enable = true;
+  programs.nushell = {
+    enable = true;
 
-      carapace.enable = true;
-      carapace.enableNushellIntegration = true;
+    extraConfig = ''
+      $env.config = {
+        show_banner: false
+        completions: {
+          case_sensitive: false
+          quick: true
+          partial: true
+          algorithm: "fuzzy"
+          external: {
+            enable: true
+            completer: {|spans|
+              carapace $spans.0 nushell ...$spans
+              | from json
+              | default []
+            }
+          }
+        }
+      }
+    '';
+  };
 
-      starship = {
-        enable = true;
-        settings = {
-          add_newline = true;
-          character = {
-            success_symbol = "[➜](bold green)";
-            error_symbol = "[➜](bold red)";
-          };
-        };
-      };
-    };
+  programs.carapace = {
+    enable = true;
+    enableNushellIntegration = true;
   };
 }
