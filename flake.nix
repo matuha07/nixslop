@@ -8,8 +8,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf.url = "github:notashelf/nvf?ref=v0.8";
-
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -22,7 +20,6 @@
       nixpkgs,
       home-manager,
       zen-browser,
-      nvf,
       ...
     }:
     let
@@ -45,7 +42,6 @@
                 imports = [
                   ./home-manager/home.nix
                   inputs.zen-browser.homeModules.beta
-		  nvf.homeManagerModules.default
                 ];
               };
             }

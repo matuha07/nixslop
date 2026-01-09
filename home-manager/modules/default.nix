@@ -9,7 +9,6 @@
     ./helix.nix
     ./vscode.nix
     ./gtk.nix
-    ./nvf.nix
     ./hyprland
     ./wofi
     ./waybar
