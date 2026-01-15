@@ -4,18 +4,22 @@
   services.flatpak.enable = true;
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+
     vim
     wget
     git
     tmux
-    cloudflare-warp
     efibootmgr
-    openssl
-    prisma-engines
     brightnessctl
     bluetui
     nushell
 
+    pciutils
+    usbutils
+    unzip
+    zip
+    lm_sensors
+    bind
     #hyprslop
     hyprpolkitagent
 

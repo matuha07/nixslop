@@ -21,6 +21,16 @@
   };
 
   networking.networkmanager.enable = true;
+  networking.nameservers = [
+    "1.1.1.1"
+    "8.8.8.8"
+  ];
+  
+  nix.binaryCaches = [ "https://aseipp-nix-cache.global.ssl.fastly.net" ];
+
+
+  services.resolved.enable = true;
+
   security.polkit.enable = true;
   time.timeZone = "Asia/Almaty";
   i18n.defaultLocale = "en_US.UTF-8";
@@ -53,8 +63,6 @@
     "nix-command"
     "flakes"
   ];
-
-  services.cloudflare-warp.enable = true;
 
   system.stateVersion = "25.11";
 

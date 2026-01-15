@@ -8,26 +8,27 @@ in
     kdePackages.qtsvg
     kdePackages.qt6ct
 
+    helium-browser
+
     qbittorrent
     localsend
+    
+    grim
+    grimblast
+    
     fastfetch
     btop
-    unzip
-    zip
     ripgrep
-    pciutils
-    usbutils
-    wl-clipboard
-    grim
-    slurp
-    dconf
-    cliphist
-    grimblast
-    telegram-desktop
-    lm_sensors
     bat
-    helium-browser
+
+    wl-clipboard
+    slurp
+    cliphist
     carapace
+    dconf
+
+    #social
+    telegram-desktop
 
     #media
     ffmpeg
@@ -35,6 +36,8 @@ in
     feh
     krita
     obs-studio
+
+    #game
     prismlauncher
 
     #hyprass

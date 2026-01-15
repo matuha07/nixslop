@@ -7,5 +7,6 @@
     ./video.nix
     ./bluetooth.nix
     ./steam.nix
+    ./ssh.nix
   ];
 }
